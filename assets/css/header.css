@@ -1,0 +1,55 @@
+.bg-fundo{
+    background-color: #14213D;
+}
+.navbar.scrolled{
+    transition: background-color 0.3s ease-in-out;
+}
+.fundo{
+    width: 120rem;
+    height: 50px;
+    margin-top: -7.6px;
+}
+.fundo2{
+    background-color: #14213D;
+}
+.botao2{
+    width: 48px;
+    height: 44px;
+    margin-top: 2.1px;
+}
+.botao_dropdown1{
+    margin-top: 6px;
+    margin-right: 547px;
+    width: 150px;
+    height: 35px;
+}
+
+.botao_dropdown2{
+    margin-top: -59px;
+    width: 150px;
+    height: 35px;
+    margin-right: 350px;
+}
+.botao_dropdown3{
+    margin-top: -83px;
+    width: 150px;
+    height: 35px;
+    margin-right: 175px;
+}
+.botao_dropdown4{
+    margin-top: -107px;
+    width: 150px;
+    height: 35px;
+}
+
+@media only screen and (max-width: 990px) {
+    .borTop{
+        border-top: 1px solid #dee2e6 !important;
+    }
+    .borBottom{
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+    .footer{
+        top: 230rem;
+    }    
+}

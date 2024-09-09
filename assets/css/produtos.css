@@ -1,0 +1,60 @@
+.botao-produto {
+    margin-top: -7rem;
+}
+
+.produto1 {
+    background-color: #E2EAFC;
+}
+
+.imgbag {
+    margin-top: -3rem;
+}
+
+.texto-produto {
+    margin-top: -1rem;
+}
+
+.produtobotao {
+    width: 2rem;
+    height: 2rem;
+}
+
+.texto2 {
+    margin-top: 2.7rem;
+}
+
+@media only screen and (max-width: 699px) {
+    svg {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width: 699px) {
+    svg {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .borda {
+        border-right: 3px solid;
+    }
+    .cagaco {
+        width:50rem;
+        }
+        .porpeta{
+            display: flex;
+            align-self:flex;
+        }
+    
+
+}

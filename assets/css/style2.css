@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.imgTop{
+    height: 38rem;
+    background-image: url(../img/inicio.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.firsttext{
+    background-color: #14213D;
+    height: 30rem;
+}
+.erp{
+    margin-top: 15px;
+}
+.paragrafo_erp{
+    margin-top: 10rem;
+}
+footer{
+    background-color: #14213D;
+}
+@media only screen and (max-width: 990px) {
+    .borTop{
+        border-top: 1px solid #dee2e6 !important;
+    }
+    .borBottom{
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+    .footer{
+        top: 230rem;
+    }    
+}

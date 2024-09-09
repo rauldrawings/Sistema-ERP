@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #24264F;
+}
+.card,
+.logo,
+.cardy-body{
+    background-color: #24264F;
+}
+
+@media only screen and (max-width: 990px) {
+    .borTop{
+        border-top: 1px solid #dee2e6 !important;
+    }
+    .borBottom{
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+    .footer{
+        top: 230rem;
+    }    
+}
