@@ -8,3 +8,9 @@
 .bg-input{
     background-color: #E2EAFC;
 }
+
+@media only screen and (min-width: 768px) {
+    .coluna2{
+        margin-top: 16.8rem;
+    }
+}

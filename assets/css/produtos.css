@@ -44,17 +44,10 @@
     main {
         flex-direction: column;
     }
+}
 
-    .borda {
-        border-right: 3px solid;
+@media only screen and (min-width: 768px) {
+    .coluna2{
+        margin-top: 8rem;
     }
-    .cagaco {
-        width:50rem;
-        }
-        .porpeta{
-            display: flex;
-            align-self:flex;
-        }
-    
-
 }
