@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../src/bootstrap/css/bootstrap.min.css">
+    <!--reset css-->
     <link rel="stylesheet" href="../../../assets/css/reset.css">
+    <!--headewr css-->
     <link rel="stylesheet" href="../../../assets/css/header.css">
+    <!--pedidos de compras css-->
+    <link rel="stylesheet" href="../../../assets/css/pedidosdecompra.css">
     <title>pedidos_de_compra</title>
 </head>
 
-<body>
-    <header class="bg-fundo">
+<body class="bg-fundo">
+    <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler btn btn-lg border-0" type="button" data-bs-toggle="collapse"
@@ -75,7 +79,88 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main class="bg-fundo">
+<div class="container mt-5">
+    <h3 class="mb-4 text-light">Pedidos de compra</h3>
+    <form>
+        <!-- Fornecedor -->
+        <div class="mb-3">
+            <label for="fornecedor" class="form-labe text-light">Fornecedor</label>
+            <input type="text" class="form-control" id="fornecedor" placeholder="Digite o nome do fornecedor">
+        </div>
+        <!-- Itens do Pedido de Compra -->
+        <div class="mb-3">
+            <h5 class="text-light">Itens do Pedido de Compra</h5>
+            <div class="row g-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Item">
+                </div>  
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Código">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Unidade">
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Quantidade">
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Preço Unitário">
+                </div>
+            </div>
+        </div>
+        <!-- Totais da compra -->
+        <div class="mb-3">
+            <h5 class="text-light">Totais da Compra</h5>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Total dos Produtos">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Total ICMS ">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Total do Pedido">
+                </div>
+            </div>
+        </div>
+        <!-- Detalhes da Compra -->
+        <div class="mb-3">
+            <h5 class="text-light">Detalhes da Compra</h5>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Número do Pedido">
+                </div>
+                <div class="col-md-4">
+                    <input type="date" class="form-control" placeholder="Data da Compra">
+                </div>
+                <div class="col-md-4">
+                    <input type="date" class="form-control" placeholder="Data Prevista">
+                </div>
+            </div>
+        </div>
+        <!-- Pagamento -->
+        <div class="mb-3">
+            <label for="pagamento" class="form-label text-light">Condição de Pagamento</label>
+            <input type="text" class="form-control" id="pagamento" placeholder="Digite a condição de pagamento">
+        </div>
+        <!-- Transportador -->
+        <div class="mb-3 ">
+            <label for="transportador" class="form-label text-light">Transportador</label>
+            <input type="text" class="form-control" id="transportador" placeholder="Nome do transportador">
+        </div>
+        <!-- Dados Adicionais -->
+        <div class="mb-3">
+            <label for="observacoes" class="form-label text-light">Observações</label>
+            <textarea class="form-control" id="observacoes" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning btn-custom m-1">Enviar Pedido</button>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    </main>
     <script src="../../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../../../src/js/script.js"></script>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../../../assets/css/header.css">
+    <link rel="stylesheet" href="./../../../assets/css/rel_saldo.css">
+    <title>Relatório de Saldos em Estoque</title>
+</head>
+
+<body class="bg-fundo">
+    <header>
+
+    </header>
+    <main>
+        <div class="container mt-5 d-flex">
+            <h2 class="mb-4 text-light">Relatório de Saldos em Estoque</h2>
+            <form>
+                <div class="row mb-3 text-light">
+                    <div class="col-md-6">
+                        <label for="data" class="form-label">Dia</label>
+                        <input type="date" class="form-control" id="data" value="2024-09-16">
+                    </div>
+                    <div class="col-md-6 text-light">
+                        <label for="fornecedor" class="form-label">Fornecedor</label>
+                        <input type="text" class="form-control" id="fornecedor" placeholder="">
+                    </div>
+                </div>
+                <div class="mb-3 form-check text-light">
+                    <input type="checkbox" class="form-check-input" id="produtosLancamentos">
+                    <label class="form-check-label" for="produtosLancamentos">Exibir apenas produtos com lançamentos de estoque</label>
+                </div>
+                <div class="mb-3 form-check text-light">
+                    <input type="checkbox" class="form-check-input" id="reservaEstoque">
+                    <label class="form-check-label" for="reservaEstoque">Considerar reserva de estoque para cálculo de quantidade</label>
+                </div>
+                <div class="mb-3 form-check text-light">
+                    <input type="checkbox" class="form-check-input" id="produtosInativos">
+                    <label class="form-check-label" for="produtosInativos">Exibir produtos inativos</label>
+                </div>
+                <div class="mb-3 form-check text-light">
+                    <input type="checkbox" class="form-check-input" id="composicoesEstoqueVirtual" checked>
+                    <label class="form-check-label" for="composicoesEstoqueVirtual">Exibir composições com estoque virtual</label>
+                </div>
+                <h5 class="text-light">Exibir apenas produtos com saldo</h5>
+                <div class="mb-3 form-check text-light">
+                    <input type="checkbox" class="form-check-input" id="menorQueZero" checked>
+                    <label class="form-check-label" for="menorQueZero">Menor que zero</label>
+                </div>
+                <div class="mb-3 form-check text-light">
+                    <input type="checkbox" class="form-check-input" id="igualAZero" checked>
+                    <label class="form-check-label" for="igualAZero">Igual a zero</label>
+                </div>
+                <div class="mb-3 form-check text-light">
+                    <input type="checkbox" class="form-check-input" id="maiorQueZero" checked>
+                    <label class="form-check-label" for="maiorQueZero">Maior que zero</label>
+                </div>
+                <h5 class="text-light">Exibir colunas opcionais</h5>
+                <div class="mb-3 form-check text-light">
+                    <input type="checkbox" class="form-check-input" id="dataUltimaVenda">
+                    <label class="form-check-label" for="dataUltimaVenda">Data da última venda</label>
+                </div>
+                <div class="mb-3 form-check text-light">
+                    <input type="checkbox" class="form-check-input" id="dataUltimaCompra">
+                    <label class="form-check-label" for="dataUltimaCompra">Data da última compra</label>
+                </div>
+            </form>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+            <table class="table w-100">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">PRODUTO</th>
+                        <th scope="col">CÓDIGO</th>
+                        <th scope="col">QUANTIDADE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit" class="btn btn-success">Visualizar</button>
+        </div>
+    </main>
+    <script src="../../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../../src/js/script.js"></script>
+</body>
+</html>
