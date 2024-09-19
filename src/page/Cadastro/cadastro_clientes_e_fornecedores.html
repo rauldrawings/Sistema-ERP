@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../../../assets/css/cadastrodevendeclientesevendedores.css">
     <link rel="stylesheet" href="./../../../assets/css/header.css">
+    <link rel="stylesheet" href="./../../../assets/css/vendedor.css">
     <title>Cadastro de clientes e fornecedores</title>
 </head>
 
@@ -14,8 +15,9 @@
     <header class="bg-fundo border-bottom border-warning border-1">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <button class="navbar-toggler btn btn-lg border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" data-bs-theme="dark"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler btn btn-lg border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" data-bs-theme="dark" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse text-light nav nav-underline" id="navbarNavDropdown">
@@ -24,14 +26,17 @@
                             <a class="nav-link text-light" aria-current="page" href="./../../../index2.html">Início</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle text-light" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link active dropdown-toggle text-light" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Cadastro
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./cadastro_clientes_e_fornecedores.html">Cadastro de Clientes e Fornecedores</a></li>
-                                <li><a class="dropdown-item" href="./cadastro_de_produtos.html">Cadastro de Produtos</a></li>
-                                <li><a class="dropdown-item" href="./cadastro_de_vendedores.html">Cadastro de Vendedores</a></li>
+                                <li><a class="dropdown-item" href="./cadastro_clientes_e_fornecedores.html">Cadastro de
+                                        Clientes e Fornecedores</a></li>
+                                <li><a class="dropdown-item" href="./cadastro_de_produtos.html">Cadastro de Produtos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./cadastro_de_vendedores.html">Cadastro de
+                                        Vendedores</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -40,13 +45,56 @@
                                 Suprimentos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./../Controle-de-estoque/produtos.html">Controle de Estoque</a></li>
-                                <li><a class="dropdown-item" href="./../Controle-de-estoque/pedidos_de_compra.html">Pedidos de Compra</a></li>
-                                <li><a class="dropdown-item" href="./../Controle-de-estoque/relatorios.html">Relatórios</a></li>
+                                <li><a class="dropdown-item" href="./../Controle-de-estoque/produtos.html">Controle de
+                                        Estoque</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./../Controle-de-estoque/pedidos_de_compra.html">Pedidos de Compra</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="./../Login/alterar_dados.html">Alterar Dados</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Relatórios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="./../Relatorios/relatoriodebaixas.html">Relatório de
+                                        Produtos Abaixo do Estoque Mínimo</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="./../Relatorios/relatoriodeentradaesaidas.html">Relatório De entradas e
+                                        saidas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="./../Relatorios/relatoriodemaiorcirculação.html">Relatório De Produtos com
+                                        Maior Circulação</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="./../Relatorios/relatoriodevisaofinanceira.html">Relatório de visão
+                                        financeira do estoque</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="./../Relatorios/relatoriodorudutossemmovi.html">Relatório De Produtos sem
+                                        movimentações</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="./../Relatorios/relatoriosdesaldoemestoque.html">Relatório de Saldos em
+                                        Estoque</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./../Relatorios/relatorios.html">Relatório de
+                                        vendas</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -54,14 +102,14 @@
         </nav>
     </header>
     <main>
-        <link rel="stylesheet" href="./../../../assets/css/vendedor.css">
         <div class="container">
             <div class=" align-items-center text-center">
                 <div class="logo m-3 rounded mx-auto d-block ">
-                    <img class="logo" src="../../../assets/img/logo.senac-removebg-preview.png" alt="" style="width: 12rem; height: auto;">
+                    <img class="logo" src="../../../assets/img/logo.senac-removebg-preview.png" alt=""
+                        style="width: 12rem; height: auto;">
                     <h2 class="text-center text-light mt-2 mb-3">CADASTRO DE CLIENTES E FORNECEDORES</h2>
                 </div>
-                <div class="cardy-body mt-1 w-75 ">
+                <div class="cardy-body mt-1 w-75">
                     <form>
                         <div class="mb-3 ">
                             <input type="text" class="form-control rounded-3 h-50 border border-3 border-warning"
@@ -84,7 +132,8 @@
                                 id="exampleInputPassword1" placeholder="55+ TELEFONE/CELULAR:">
                         </div>
                         <div class="mb-3">
-                            <input type="text and number" class="form-control rounded-3 h-50 border border-3 border-warning"
+                            <input type="text and number"
+                                class="form-control rounded-3 h-50 border border-3 border-warning"
                                 id="exampleInputPassword1" placeholder="Email:">
                         </div>
                         <div class="mb-3">
@@ -111,31 +160,33 @@
                             <input type="text" class="form-control rounded-3 h-50 border border-3 border-warning"
                                 id="exampleInputPassword1" placeholder="ENDEREÇO:">
                         </div>
-                        <div class=" text-center mb-3">
-                            <button type="button" class="btn btn-outline-success" id="liveToastBtn">Salvar</button>
-                            <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                                    <div class="toast-header">
-                                        <strong class="me-auto">Senac</strong>
-                                        <small>Now</small>
-                                        <button type="button" class="btn-close" data-bs-dismiss="toast"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="toast-body">
-                                        Cadastro feito com sucesso.
+                        <div class="modal-content mb-3">
+                            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Salvar
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Senac</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Cadastro feito com sucesso.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" text-center mb-3">
-                            <a role="button" class="btn btn-outline-danger" href="cadastro_clientes_e_fornecedores.html">Cancelar</a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </main>
-    <script src="./../../bootstrap/css/bootstrap.bundle.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./../js/snippets.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./../../js/script.js"></script>

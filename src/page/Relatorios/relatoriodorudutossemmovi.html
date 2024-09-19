@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./../../../assets/css/relatorios.css" />
     <!--header css-->
     <link rel="stylesheet" href="./../../../assets/css/header.css" />
-    <title>Relatório De Vendas</title>
+    <title>Relatório De Produtos sem movimentações</title>
 </head>
 
 <body>
@@ -78,48 +78,10 @@
     </header>
     <main>
         <div class="container">
-            <h2 class="text-center text-light mt-4">Relatório de Vendas</h2>
+            <h2 class="text-center text-light mt-4">Relatório de Produtos sem movimentação </h2>
             <div class=" col d-flex">
-                <form class="d-flex">
-                    <div class="row">
-                        <div class="m-3 col">
-                            <label for="dia" class="form-label text-light">Dia</label>
-                            <select class="form-select" id="dia">
-                                <option value="" selected>1</option>
-                                <option value="" selected>2</option>
-                                <option value="" selected>3</option>
-                                <option value="" selected>4</option>
-                                <option value="" selected>5</option>
-                                <option value="" selected>6</option>
-                                <option value="" selected>7</option>
-                                <option value="" selected>8</option>
-                                <option value="" selected>9</option>
-                                <option value="" selected>10</option>
-                                <option value="" selected>11</option>
-                                <option value="" selected>12</option>
-                                <option value="" selected>13</option>
-                                <option value="" selected>14</option>
-                                <option value="" selected>15</option>
-                                <option value="" selected>16</option>
-                                <option value="" selected>17</option>
-                                <option value="" selected>18</option>
-                                <option value="" selected>19</option>
-                                <option value="" selected>20</option>
-                                <option value="" selected>21</option>
-                                <option value="" selected>22</option>
-                                <option value="" selected>23</option>
-                                <option value="" selected>24</option>
-                                <option value="" selected>25</option>
-                                <option value="" selected>26</option>
-                                <option value="" selected>27</option>
-                                <option value="" selected>20</option>
-                                <option value="" selected>29</option>
-                                <option value="" selected>30</option>
-                                <option value="" selected>31</option>
-                                <option value="" selected>Dia</option>
-                                <!-- Opções de dia -->
-                            </select>
-                        </div>
+                <form class="d-flex justify-content">
+                    <div class="row d-flex flex-column">
                         <div class="m-3 col">
                             <label for="mes" class="form-label text-light">Mês</label>
                             <select class="form-select" id="mes">
@@ -135,26 +97,40 @@
                                 <option value="" selected>Outubro</option>
                                 <option value="" selected>Novembro</option>
                                 <option value="" selected>Dezembro</option>
-                                <option value="" selected>Mês</option>
-                                <!-- Opções de mês -->
+                                <option value="" selected>Opção</option>
+                            </select>
+                        </div>
+                        <div class="m-3 col">
+                            <label for="mes" class="form-label text-light">Ordenar por:</label>
+                            <select class="form-select" id="mes">
+                                <option value="" selected>Quantidade</option>
+                                <option value="" selected>Valor</option>
+                                <option value="" selected>Alfabética</option>
+                                <option value="" selected>Opção</option>
                             </select>
                         </div>
                     </div>
                     <div class="row ms-3">
-                        <div class="m-3 col">
-                            <label for="ano" class="form-label text-light">Ano</label>
+                        <div class="m-3 col-md-5">
+                            <label for="ano" class="form-label text-light">Periodo</label>
                             <select class="form-select" id="ano">
-                                <option value="" selected>2024</option>
-                                <option value="" selected>Ano</option>
+                                <option value="" selected>7 dias</option>
+                                <option value="" selected>15 dias</option>
+                                <option value="" selected>30  dias</option>
+                                <option value="">Um ano</option>
                                 <!-- Opções de ano -->
                             </select>
                         </div>
-                        <div class="m-3 col">
-                            <label for="cliente" class="form-label text-light">Cliente</label>
-                            <select class="form-select" id="cliente">
-                                <option value="" selected>Cliente</option>
-                                <!-- Opções de cliente -->
-                            </select>
+                        <div class=" text-white ms-3">
+                            <h3>Quantidade de movimentações:</h3>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkbox1" onclick="handleCheckboxChange(this)">
+                                <label class="custom-control-label" for="checkbox1">Nenhuma</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkbox2" onclick="handleCheckboxChange(this)">
+                                <label class="custom-control-label" for="checkbox2">Maior que 1 </label>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -165,8 +141,9 @@
                         <tr>
                             <th scope="col"></th>
                             <th scope="col">PRODUTO</th>
-                            <th scope="col">CÓDIGO</th>
+                            <th scope="col">CODÍGO</th>
                             <th scope="col">QUANTIDADE</th>
+                            <th scope="col">DATA DA ULTIMA VENDA</th>
                         </tr>
                     </thead>
                     <tbody>
