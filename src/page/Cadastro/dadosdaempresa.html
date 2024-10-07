@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Empresa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+    background-color: #14213D;
+}
+</style>
+<body class="text-white">
+    <div class="container mt-5">
+        <h2 class="mb-4">Dados da empresa</h2>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="nome" class="form-label">Nome <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="col-md-4">
+                    <label for="nomeFantasia" class="form-label">Nome Fantasia</label>
+                    <input type="text" class="form-control" id="nomeFantasia">
+                </div>
+                <div class="col-md-4">
+                    <label for="tipoPessoa" class="form-label">Tipo da Pessoa</label>
+                    <select id="tipoPessoa" class="form-select">
+                        <option selected>Pessoa Física</option>
+                        <option>Pessoa Jurídica</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="cpf" class="form-label">CPF <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="cpf">
+                </div>
+                <div class="col-md-4">
+                    <label for="atividadePrincipal" class="form-label">Atividade principal</label>
+                    <select id="atividadePrincipal" class="form-select">
+                        <option>Artigos esportivos</option>
+                        <option>Artesanato</option>
+                        <option>Artigos para bebe</option>
+                        <option>Moda e acessorios</option>
+                        <option>Educação</option>
+                        <option>joias e oticas</option>
+                        <option>Decoração </option>
+                        <option>Eletroportaveis</option>
+                        <option>Consoles e video-games</option>
+                        <option>Pet</option>
+                        <option>ONGs</option>
+                        <option>Clubes e associaçoes</option>
+                        <option>veiculos e peçãs</option>
+                        <option>ferragens</option>
+                        <option>Imóveis e contrução</option>
+                        <option>Computadores e internet</option>
+                        <option>Saúde e medicina</option>
+                        <option>Arte</option>
+                        <option>Alimentos e bebidas</option>
+                        <option>Beleza, perfumaria e medicamentos</option>
+                        <option>Eletro-eletrônicos</option>
+                        <option>Móveis,casa e decoração</option>
+                        <option>Agronegócio</option>
+                        <option>Segurança</option>
+                        <option>Financeiro, Contábil, Juridico</option>
+                        <option>Máquinas e equipamentos</option>
+                        <option>Energia elétrica</option>
+                        <option>Comunicação e telecomunicação</option>
+                        <option>Bares e restaurantes</option>
+                        <option>Delivery</option>
+                        <option>Outros</option>
+                        <option>Smartphones</option>
+                        <option>Brinquedos</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label h3">Endereço <span class="text-danger">*</span></label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="segmentoComercio" value="Comércio">
+                    <label class="form-check-label" for="segmentoComercio">Comércio</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="segmentoEcommerce" value="E-commerce">
+                    <label class="form-check-label" for="segmentoEcommerce">E-commerce</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="segmentoIndustria" value="Indústria" checked>
+                    <label class="form-check-label" for="segmentoIndustria">Indústria</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="segmentoServicos" value="Serviços">
+                    <label class="form-check-label" for="segmentoServicos">Serviços</label>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-2">
+                    <label for="cep" class="form-label">CEP <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="cep">
+                </div>
+                <div class="col-md-3">
+                    <label for="uf" class="form-label">UF <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="uf">
+                </div>
+                <div class="col-md-5">
+                    <label for="cidade" class="form-label">Cidade <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="cidade">
+                </div>
+                <div class="col-md-2">
+                    <label for="numero" class="form-label">Bairro<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="numero">
+                </div>
+                <div class="col-md-5">
+                    <label for="numero" class="form-label">Endereço<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="numero">
+                </div>
+                <div class="col-md-3">
+                    <label for="complemento" class="form-label">Número</label>
+                    <input type="text" class="form-control" id="complemento">
+                </div>
+                <div class="col-md-3">
+                    <label for="numero" class="form-label">Complemento <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="numero">
+                </div>
+            </div>
+            <label class="form-label h3">Contato <span class="text-danger">*</span></label><br>
+            <div class="row mb-3">
+                <div class="col-md-5">
+                    <label for="email" class="form-label">Pessoas de contato</label>
+                    <input type="email" class="form-control" id="email" placeholder="">
+                </div>
+                <div class="col-md-3">
+                    <label for="emailCobranca" class="form-label">Telefone</label>
+                    <input type="email" class="form-control" id="emailCobranca" placeholder="">
+                </div>
+                <div class="col-md-4">
+                    <label for="site" class="form-label">Celular</label>
+                    <input type="url" class="form-control" id="site" placeholder="">
+                </div>
+                <div class="col-md-5">
+                    <label for="numero" class="form-label">E-mail<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="numero">
+                </div>
+                <div class="col-md-3">
+                    <label for="numero" class="form-label">E-mail de cobrança<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="numero">
+                </div>
+                <div class="col-md-4">
+                    <label for="numero" class="form-label">Site<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="numero">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label h3">Sua marca <span class="text-danger">*</span></label>
+                <div class="d-flex align-items-center">
+                    <img src="https://via.placeholder.com/120x56" alt="Logo" class="me-3" style="border: 1px solid #ddd;">
+                    <button type="button" class="btn btn-outline-secondary">Alterar imagem</button>
+                </div>
+                <small class="form-text text-muted">A resolução mínima indicada da imagem é de 120 x 56 pixels</small>
+            </div>
+            <button type="button" class="btn btn-outline-success">Gerar nova logo</button>
+        </form>
+    </div>
+</header>
+    <div class="d-flex justify-content-center mt-3 mb-5">
+        <div class="button1 d-flex">
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Salvar
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Senac</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Cadastro feito com sucesso.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button2 d-flex ms-3">
+            <a type="button" class="btn btn-outline-danger" data-bs-target="#exampleModal"
+                href="./cadastro_de_produtos.html">
+                Cancelar
+            </a>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>

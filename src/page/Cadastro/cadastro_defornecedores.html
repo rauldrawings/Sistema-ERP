@@ -106,15 +106,15 @@
     </header>
     <main>
         <div class="container p-3">
-            <div class="p-3">
+            <div class="">
                 <div class="logo m-5 text-center">
                     <img class="logo" src="./../../assets/img/logo.senac-removebg-preview.png" alt=""
                         style="width: 12rem; height: auto;">
-                    <h2 class="text-center text-light mt-2 mb-4 ">CADASTRO DE VENDEDOR</h2>
+                    <h2 class="text-center text-light mt-2 mb-4 ">CADASTRO DE FORNECEDORES</h2>
                 </div>
-                <div class="mt-1 w-75 border-0 justify-content-center w-100">
+                <div class="mt-1 border-0 justify-content-center w-100">
                     <form>
-                        <div class="mb-3 text-center">
+                        <div class="mb-3">
                             <input type="text" class="form-control rounded-3 h-50 border border-3 border-warning"
                                 id="exampleInputPassword1" placeholder="Nome:">
                         </div>
@@ -162,35 +162,28 @@
                             <input type="text" class="form-control rounded-3 h-50 border border-3 border-warning"
                                 id="exampleInputPassword1" placeholder="ENDEREÇO:">
                         </div>
-                        <div class="d-flex align-items-center">
-                            <div class="button1 d-flex">
-                                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Salvar
-                                </button>
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Senac</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                Cadastro feito com sucesso.
-                                            </div>
-                                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Salvar
+                            </button>
+                        </div>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Senac</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Cadastro feito com sucesso.
                                     </div>
                                 </div>
                             </div>
-                            <div class="button2 d-flex ms-3">
-                                <a type="button" class="btn btn-outline-danger" data-bs-target="#exampleModal"
-                                    href="./cadastro_de_vendedores.html">
-                                    Cancelar
-                                </a>
-                            </div>
                         </div>
+                </div>
                 </form>
             </div>
         </div>

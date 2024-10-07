@@ -7,6 +7,7 @@ body{
 }
 .cardFundo{
     background-color: #14213D;
+    border: none;
 }     
 form {
     width: auto;
